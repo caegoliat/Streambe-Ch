@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+  }
+  
+  
+  .column {
+    flex: 1;
+    max-width: 300px; 
+    margin: 10px;
+    margin-top: 100px;
+    text-align: center; 
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .column {
+      max-width: none; 
+    }
+  }
+  
+.greetings {
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  color: rgb(116, 112, 112);
+  font-weight: 200;
+}
+
+.logout-button {
+  margin-left: 900px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  padding: 0;
+ 
+}
+
+.logout-button:hover {
+  color: #333;
+  text-decoration: underline;
+}
